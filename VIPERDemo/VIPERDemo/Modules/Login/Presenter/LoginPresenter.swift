@@ -3,11 +3,10 @@
 // Copyright (c) 2017 VIPER. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class LoginPresenter: LoginPresenterProtocol, LoginInteractorOutputProtocol
-{
+class LoginPresenter: LoginPresenterProtocol, LoginInteractorOutputProtocol {
+    
     weak var view: LoginViewProtocol?
     var interactor: LoginInteractorInputProtocol?
     var wireFrame: LoginWireFrameProtocol?

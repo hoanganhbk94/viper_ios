@@ -3,11 +3,10 @@
 // Copyright (c) 2017 VIPER. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class HomeView: UIViewController, HomeViewProtocol, UITableViewDelegate, UITableViewDataSource
-{
+class HomeView: UIViewController, HomeViewProtocol, UITableViewDelegate, UITableViewDataSource {
+    
     let CellIdentifier      =       "UserTableViewCell"
     
     var presenter: HomePresenterProtocol?
@@ -25,8 +24,8 @@ class HomeView: UIViewController, HomeViewProtocol, UITableViewDelegate, UITable
         super.viewDidLoad()
         
         // Display data
-        getUserFromDatabase()
-        lblMessage.text = userToken
+        self.getUserFromDatabase()
+        self.lblMessage.text = userToken
         
         // Register nib
         self.tableView.registerNib(UINib(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: CellIdentifier)

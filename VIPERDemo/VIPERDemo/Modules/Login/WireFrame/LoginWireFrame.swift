@@ -5,16 +5,15 @@
 
 import UIKit
 
-class LoginWireFrame: LoginWireFrameProtocol
-{
+class LoginWireFrame: LoginWireFrameProtocol {
     
     func presentLoginModule(fromView view: UIViewController, data: NSObject?) -> UIViewController {
         // Generating module components
         let view: LoginViewProtocol = LoginView()
         let presenter: protocol<LoginPresenterProtocol, LoginInteractorOutputProtocol> = LoginPresenter()
         let interactor: LoginInteractorInputProtocol = LoginInteractor()
-        let APIDataManager: LoginAPIDataManagerInputProtocol = LoginAPIDataManager()
-        let localDataManager: LoginLocalDataManagerInputProtocol = LoginLocalDataManager()
+        let apiDataManager: APIDataManagerInputProtocol = APIDataManager()
+        let localDataManager: LocalDataManagerInputProtocol = LocalDataManager()
         let wireFrame: LoginWireFrameProtocol = LoginWireFrame()
         
         // Connecting
@@ -23,7 +22,7 @@ class LoginWireFrame: LoginWireFrameProtocol
         presenter.wireFrame = wireFrame
         presenter.interactor = interactor
         interactor.presenter = presenter
-        interactor.APIDataManager = APIDataManager
+        interactor.apiDataManager = apiDataManager
         interactor.localDatamanager = localDataManager
         
         return view as! UIViewController

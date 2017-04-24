@@ -3,24 +3,29 @@
 // Copyright (c) 2017 VIPER. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class LoginLocalDataManager: LoginLocalDataManagerInputProtocol {
+class LocalDataManager: LocalDataManagerInputProtocol {
     
-    var arr_user: [UserEntity]  = []
+    var array_user: [UserEntity] = []
     
     init() {
-        for i in 0..<5 {
-            let user = UserEntity(user_name: "user\(i)", password: "pass\(i)")
-            self.arr_user.append(user)
+        if let path = NSBundle.mainBundle().pathForResource("database", ofType: "plist") {
+            if let array_dict: [NSDictionary] = NSArray(contentsOfFile: path) as? [NSDictionary]{
+                for dict in array_dict {
+                    let user = UserEntity.parseUserEntity(dict)
+                    self.array_user.append(user)
+                }
+            }
         }
-        
     }
+    
+    // MARK: - API Protocol
     
     func fetchUser(userName: String, password: String, completion: (successed: Bool, data: NSObject?) -> Void) {
         var flag = false
         
-        for user in arr_user {
+        for user in array_user {
             if user.user_name == userName && user.password == password {
                 let token = "\(userName)xxx"
                 completion(successed: true, data: token)
@@ -34,7 +39,7 @@ class LoginLocalDataManager: LoginLocalDataManagerInputProtocol {
     }
     
     func getListUser(completion: (successed: Bool, data: [UserEntity]) -> Void) {
-        completion(successed: true, data: self.arr_user)
+        completion(successed: true, data: self.array_user)
     }
     
 }

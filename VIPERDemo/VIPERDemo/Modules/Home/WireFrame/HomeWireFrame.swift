@@ -3,20 +3,20 @@
 // Copyright (c) 2017 VIPER. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class HomeWireFrame: HomeWireFrameProtocol
-{
-    func presentHomeModule(fromView view: UIViewController, data: AnyObject?) -> UIViewController
-    {
+class HomeWireFrame: HomeWireFrameProtocol {
+    
+    // MARK: - Home WireFrame Protocol
+    
+    func presentHomeModule(fromView view: UIViewController, data: AnyObject?) -> UIViewController {
         // Generating module components
         let view: HomeViewProtocol = HomeView()
         (view as! HomeView).userToken = data as? String
         let presenter: protocol<HomePresenterProtocol, HomeInteractorOutputProtocol> = HomePresenter()
         let interactor: HomeInteractorInputProtocol = HomeInteractor()
-        let APIDataManager: LoginAPIDataManagerInputProtocol = LoginAPIDataManager()
-        let localDataManager: LoginLocalDataManagerInputProtocol = LoginLocalDataManager()
+        let apiDataManager: APIDataManagerInputProtocol = APIDataManager()
+        let localDataManager: LocalDataManagerInputProtocol = LocalDataManager()
         let wireFrame: HomeWireFrameProtocol = HomeWireFrame()
         
         // Connecting
@@ -25,7 +25,7 @@ class HomeWireFrame: HomeWireFrameProtocol
         presenter.wireFrame = wireFrame
         presenter.interactor = interactor
         interactor.presenter = presenter
-        interactor.APIDataManager = APIDataManager
+        interactor.apiDataManager = apiDataManager
         interactor.localDatamanager = localDataManager
         
         return view as! UIViewController

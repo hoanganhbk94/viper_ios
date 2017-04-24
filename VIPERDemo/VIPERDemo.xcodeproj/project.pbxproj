@@ -24,9 +24,9 @@
 		5BE4EB411EAD9FE800D8C326 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB301EAD9FE800D8C326 /* LoginView.swift */; };
 		5BE4EB421EAD9FE800D8C326 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4EB311EAD9FE800D8C326 /* LoginView.xib */; };
 		5BE4EB431EAD9FE800D8C326 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB331EAD9FE800D8C326 /* LoginWireFrame.swift */; };
-		5BE4EB4A1EAD9FF700D8C326 /* LoginAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB461EAD9FF700D8C326 /* LoginAPIDataManager.swift */; };
+		5BE4EB4A1EAD9FF700D8C326 /* APIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB461EAD9FF700D8C326 /* APIDataManager.swift */; };
 		5BE4EB4B1EAD9FF700D8C326 /* database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4EB481EAD9FF700D8C326 /* database.plist */; };
-		5BE4EB4C1EAD9FF700D8C326 /* LoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB491EAD9FF700D8C326 /* LoginLocalDataManager.swift */; };
+		5BE4EB4C1EAD9FF700D8C326 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB491EAD9FF700D8C326 /* LocalDataManager.swift */; };
 		BDFC5A371EA7504A0005AA82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFC5A361EA7504A0005AA82 /* AppDelegate.swift */; };
 		BDFC5A3E1EA7504A0005AA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFC5A3D1EA7504A0005AA82 /* Assets.xcassets */; };
 		BDFC5A411EA7504A0005AA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFC5A3F1EA7504A0005AA82 /* LaunchScreen.storyboard */; };
@@ -50,9 +50,9 @@
 		5BE4EB301EAD9FE800D8C326 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5BE4EB311EAD9FE800D8C326 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		5BE4EB331EAD9FE800D8C326 /* LoginWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
-		5BE4EB461EAD9FF700D8C326 /* LoginAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPIDataManager.swift; sourceTree = "<group>"; };
+		5BE4EB461EAD9FF700D8C326 /* APIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataManager.swift; sourceTree = "<group>"; };
 		5BE4EB481EAD9FF700D8C326 /* database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = database.plist; sourceTree = "<group>"; };
-		5BE4EB491EAD9FF700D8C326 /* LoginLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginLocalDataManager.swift; sourceTree = "<group>"; };
+		5BE4EB491EAD9FF700D8C326 /* LocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 		738B16AA6C8573BA0048617D /* Pods_VIPERDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEC774C66C23FF404BFD60E /* Pods-VIPERDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERDemo/Pods-VIPERDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFC5A331EA7504A0005AA82 /* VIPERDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,10 +166,10 @@
 		5BE4EB281EAD9FE800D8C326 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5BE4EB2F1EAD9FE800D8C326 /* View */,
 				5BE4EB291EAD9FE800D8C326 /* Interactor */,
 				5BE4EB2B1EAD9FE800D8C326 /* Presenter */,
 				5BE4EB2D1EAD9FE800D8C326 /* Protocols */,
-				5BE4EB2F1EAD9FE800D8C326 /* View */,
 				5BE4EB321EAD9FE800D8C326 /* WireFrame */,
 			);
 			path = Login;
@@ -228,7 +228,7 @@
 		5BE4EB451EAD9FF700D8C326 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				5BE4EB461EAD9FF700D8C326 /* LoginAPIDataManager.swift */,
+				5BE4EB461EAD9FF700D8C326 /* APIDataManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -236,8 +236,8 @@
 		5BE4EB471EAD9FF700D8C326 /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				5BE4EB491EAD9FF700D8C326 /* LocalDataManager.swift */,
 				5BE4EB481EAD9FF700D8C326 /* database.plist */,
-				5BE4EB491EAD9FF700D8C326 /* LoginLocalDataManager.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -411,7 +411,7 @@
 				BDFC5A371EA7504A0005AA82 /* AppDelegate.swift in Sources */,
 				5BE4EB391EAD9FE800D8C326 /* HomeView.swift in Sources */,
 				5BE4EB351EAD9FE800D8C326 /* UserEntity.swift in Sources */,
-				5BE4EB4A1EAD9FF700D8C326 /* LoginAPIDataManager.swift in Sources */,
+				5BE4EB4A1EAD9FF700D8C326 /* APIDataManager.swift in Sources */,
 				5BE4EB341EAD9FE800D8C326 /* Extension.swift in Sources */,
 				5BE4EB3F1EAD9FE800D8C326 /* LoginPresenter.swift in Sources */,
 				5BE4EB3B1EAD9FE800D8C326 /* UserTableViewCell.swift in Sources */,
@@ -423,7 +423,7 @@
 				5BE4EB3E1EAD9FE800D8C326 /* LoginInteractor.swift in Sources */,
 				5BE4EB431EAD9FE800D8C326 /* LoginWireFrame.swift in Sources */,
 				5BE4EB361EAD9FE800D8C326 /* HomeInteractor.swift in Sources */,
-				5BE4EB4C1EAD9FF700D8C326 /* LoginLocalDataManager.swift in Sources */,
+				5BE4EB4C1EAD9FF700D8C326 /* LocalDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,25 +3,24 @@
 // Copyright (c) 2017 VIPER. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class HomeInteractor: HomeInteractorInputProtocol
-{
+class HomeInteractor: HomeInteractorInputProtocol {
     
     weak var presenter: HomeInteractorOutputProtocol?
-    var APIDataManager: LoginAPIDataManagerInputProtocol?
-    var localDatamanager: LoginLocalDataManagerInputProtocol?
+    var apiDataManager: APIDataManagerInputProtocol?
+    var localDatamanager: LocalDataManagerInputProtocol?
     
     init() {
         
     }
     
-    // MARK: - HomeInteractorInputProtocol
+    // MARK: - Home Interactor Protocol
     
     func getUserFromDatabse() {
-        self.APIDataManager?.getListUser({(successed, data) -> Void in
+        self.localDatamanager?.getListUser({(successed, data) -> Void in
             self.presenter?.returnListUser(data)
         })
     }
-
+    
 }

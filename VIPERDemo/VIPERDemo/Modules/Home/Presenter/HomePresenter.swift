@@ -3,18 +3,17 @@
 // Copyright (c) 2017 VIPER. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol
-{
+class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol {
+    
     weak var view: HomeViewProtocol?
     var interactor: HomeInteractorInputProtocol?
     var wireFrame: HomeWireFrameProtocol?
     
     init() {}
     
-    // MARK: - HomePresenterProtocol
+    // MARK: - Home Presenter Protocol
     
     func logoutAccount() {
         let wireframe = HomeWireFrame()
@@ -25,7 +24,7 @@ class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol
         self.interactor?.getUserFromDatabse()
     }
     
-    // MARK: - HomeInteractorOutputProtocol
+    // MARK: - Home Interactor Protocol
     
     func returnListUser(data: [UserEntity]) {
         self.view?.showListUser(data)

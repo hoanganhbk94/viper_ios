@@ -3,7 +3,6 @@
 // Copyright (c) 2017 VIPER. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class LoginView: UIViewController, LoginViewProtocol {
@@ -16,10 +15,9 @@ class LoginView: UIViewController, LoginViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Custom view
     }
     
-    // MARK: - LoginViewProtocol
+    // MARK: - Login View Protocol
     
     func showErrorWithMessage(message: String) {
         print("Error: \(message)")
