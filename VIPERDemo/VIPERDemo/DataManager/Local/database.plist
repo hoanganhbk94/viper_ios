@@ -26,5 +26,11 @@
 		<key>password</key>
 		<string>4</string>
 	</dict>
+	<dict>
+		<key>user_name</key>
+		<string>admin</string>
+		<key>password</key>
+		<string>admin</string>
+	</dict>
 </array>
 </plist>

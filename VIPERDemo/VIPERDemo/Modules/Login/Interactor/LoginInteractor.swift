@@ -16,7 +16,7 @@ class LoginInteractor: LoginInteractorInputProtocol {
     // MARK: - LoginInteractorInputProtocol
     
     func loginWithUser(userName: String, password: String) {
-        self.localDatamanager!.fetchUser(userName, password: password, completion: {(successed, data) -> Void in
+        self.localDatamanager?.fetchUser(userName, password: password, completion: {(successed, data) -> Void in
             if successed {
                 self.presenter?.loginSucess(data as! String)
             } else {

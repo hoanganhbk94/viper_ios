@@ -15,6 +15,7 @@ class LoginView: UIViewController, LoginViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBarHidden = true
     }
     
     // MARK: - Login View Protocol

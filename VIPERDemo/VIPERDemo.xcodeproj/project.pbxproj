@@ -27,6 +27,7 @@
 		5BE4EB4A1EAD9FF700D8C326 /* APIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB461EAD9FF700D8C326 /* APIDataManager.swift */; };
 		5BE4EB4B1EAD9FF700D8C326 /* database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4EB481EAD9FF700D8C326 /* database.plist */; };
 		5BE4EB4C1EAD9FF700D8C326 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB491EAD9FF700D8C326 /* LocalDataManager.swift */; };
+		5BE4EB501EADDBDE00D8C326 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4EB4F1EADDBDE00D8C326 /* logo.jpg */; };
 		BDFC5A371EA7504A0005AA82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFC5A361EA7504A0005AA82 /* AppDelegate.swift */; };
 		BDFC5A3E1EA7504A0005AA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFC5A3D1EA7504A0005AA82 /* Assets.xcassets */; };
 		BDFC5A411EA7504A0005AA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFC5A3F1EA7504A0005AA82 /* LaunchScreen.storyboard */; };
@@ -53,13 +54,14 @@
 		5BE4EB461EAD9FF700D8C326 /* APIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataManager.swift; sourceTree = "<group>"; };
 		5BE4EB481EAD9FF700D8C326 /* database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = database.plist; sourceTree = "<group>"; };
 		5BE4EB491EAD9FF700D8C326 /* LocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		5BE4EB4F1EADDBDE00D8C326 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		738B16AA6C8573BA0048617D /* Pods_VIPERDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEC774C66C23FF404BFD60E /* Pods-VIPERDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERDemo/Pods-VIPERDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFC5A331EA7504A0005AA82 /* VIPERDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFC5A361EA7504A0005AA82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDFC5A3D1EA7504A0005AA82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDFC5A401EA7504A0005AA82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BDFC5A421EA7504A0005AA82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDFC5A421EA7504A0005AA82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +113,10 @@
 		5BE4EB1A1EAD9FE800D8C326 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5BE4EB211EAD9FE800D8C326 /* View */,
 				5BE4EB1B1EAD9FE800D8C326 /* Interactor */,
 				5BE4EB1D1EAD9FE800D8C326 /* Presenter */,
 				5BE4EB1F1EAD9FE800D8C326 /* Protocols */,
-				5BE4EB211EAD9FE800D8C326 /* View */,
 				5BE4EB261EAD9FE800D8C326 /* WireFrame */,
 			);
 			path = Home;
@@ -242,6 +244,24 @@
 			path = Local;
 			sourceTree = "<group>";
 		};
+		5BE4EB4D1EADDBB000D8C326 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC5A421EA7504A0005AA82 /* Info.plist */,
+				5BE4EB4E1EADDBCF00D8C326 /* Image */,
+				BDFC5A3F1EA7504A0005AA82 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5BE4EB4E1EADDBCF00D8C326 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				5BE4EB4F1EADDBDE00D8C326 /* logo.jpg */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		BDFC5A2A1EA7504A0005AA82 = {
 			isa = PBXGroup;
 			children = (
@@ -269,8 +289,7 @@
 				5BE4EB171EAD9FE800D8C326 /* Entity */,
 				5BE4EB191EAD9FE800D8C326 /* Modules */,
 				BDFC5A3D1EA7504A0005AA82 /* Assets.xcassets */,
-				BDFC5A3F1EA7504A0005AA82 /* LaunchScreen.storyboard */,
-				BDFC5A421EA7504A0005AA82 /* Info.plist */,
+				5BE4EB4D1EADDBB000D8C326 /* Resources */,
 			);
 			path = VIPERDemo;
 			sourceTree = "<group>";
@@ -348,6 +367,7 @@
 				5BE4EB4B1EAD9FF700D8C326 /* database.plist in Resources */,
 				BDFC5A411EA7504A0005AA82 /* LaunchScreen.storyboard in Resources */,
 				BDFC5A3E1EA7504A0005AA82 /* Assets.xcassets in Resources */,
+				5BE4EB501EADDBDE00D8C326 /* logo.jpg in Resources */,
 				5BE4EB421EAD9FE800D8C326 /* LoginView.xib in Resources */,
 				5BE4EB3A1EAD9FE800D8C326 /* HomeView.xib in Resources */,
 			);
@@ -436,6 +456,7 @@
 				BDFC5A401EA7504A0005AA82 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

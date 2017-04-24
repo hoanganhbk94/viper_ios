@@ -11,7 +11,11 @@ class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol {
     var interactor: HomeInteractorInputProtocol?
     var wireFrame: HomeWireFrameProtocol?
     
-    init() {}
+    var userToken: String
+    
+    init(token: String) {
+        self.userToken = token
+    }
     
     // MARK: - Home Presenter Protocol
     
@@ -24,10 +28,16 @@ class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol {
         self.interactor?.getUserFromDatabse()
     }
     
+    func getUserToken() {
+        self.view?.updateUserToken(self.userToken)
+    }
+    
     // MARK: - Home Interactor Protocol
     
-    func returnListUser(data: [UserEntity]) {
-        self.view?.showListUser(data)
+    func returnListUser(data: [UserEntity]?) {
+        if data != nil {
+            self.view?.showListUser(data!)
+        }
     }
     
 }

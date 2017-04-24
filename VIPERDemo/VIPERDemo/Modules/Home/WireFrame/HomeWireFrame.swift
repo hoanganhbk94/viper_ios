@@ -12,8 +12,7 @@ class HomeWireFrame: HomeWireFrameProtocol {
     func presentHomeModule(fromView view: UIViewController, data: AnyObject?) -> UIViewController {
         // Generating module components
         let view: HomeViewProtocol = HomeView()
-        (view as! HomeView).userToken = data as? String
-        let presenter: protocol<HomePresenterProtocol, HomeInteractorOutputProtocol> = HomePresenter()
+        let presenter: protocol<HomePresenterProtocol, HomeInteractorOutputProtocol> = HomePresenter(token: data as! String)
         let interactor: HomeInteractorInputProtocol = HomeInteractor()
         let apiDataManager: APIDataManagerInputProtocol = APIDataManager()
         let localDataManager: LocalDataManagerInputProtocol = LocalDataManager()

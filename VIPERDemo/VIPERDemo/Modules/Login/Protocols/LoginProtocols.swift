@@ -74,7 +74,7 @@ protocol APIDataManagerInputProtocol: class {
      */
     
     func fetchUser(userName: String, password: String, completion: (successed: Bool, data: NSObject?) -> Void)
-    func getListUser(completion: (successed: Bool, data: [UserEntity]) -> Void)
+    func getListUser(completion: (successed: Bool, data: [UserEntity]?) -> Void)
     
 }
 

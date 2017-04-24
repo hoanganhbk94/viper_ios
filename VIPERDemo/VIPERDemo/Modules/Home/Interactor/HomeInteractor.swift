@@ -18,8 +18,8 @@ class HomeInteractor: HomeInteractorInputProtocol {
     // MARK: - Home Interactor Protocol
     
     func getUserFromDatabse() {
-        self.localDatamanager?.getListUser({(successed, data) -> Void in
-            self.presenter?.returnListUser(data)
+        self.apiDataManager?.getListUser({(successed, data) -> Void in
+            self.presenter?.returnListUser(data!)
         })
     }
     

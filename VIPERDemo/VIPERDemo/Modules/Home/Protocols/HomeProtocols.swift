@@ -13,6 +13,7 @@ protocol HomeViewProtocol: class {
      */
     
     func showListUser(array: [UserEntity])
+    func updateUserToken(token: String)
     
 }
 
@@ -37,6 +38,7 @@ protocol HomePresenterProtocol: class {
     
     func logoutAccount()
     func getUserFromDatabase()
+    func getUserToken()
     
 }
 
@@ -45,7 +47,7 @@ protocol HomeInteractorOutputProtocol: class {
      * Add here your methods for communication INTERACTOR -> PRESENTER
      */
     
-    func returnListUser(data: [UserEntity])
+    func returnListUser(data: [UserEntity]?)
     
 }
 

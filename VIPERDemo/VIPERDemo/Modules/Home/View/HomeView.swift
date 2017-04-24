@@ -10,22 +10,17 @@ class HomeView: UIViewController, HomeViewProtocol, UITableViewDelegate, UITable
     let CellIdentifier      =       "UserTableViewCell"
     
     var presenter: HomePresenterProtocol?
-    var userToken: String?
     var array_user: [UserEntity] = []
     
     @IBOutlet weak var lblMessage: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    func getUserFromDatabase() {
-        self.presenter?.getUserFromDatabase()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Display data
-        self.getUserFromDatabase()
-        self.lblMessage.text = userToken
+        self.presenter!.getUserToken()
+        self.presenter?.getUserFromDatabase()
         
         // Register nib
         self.tableView.registerNib(UINib(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: CellIdentifier)
@@ -42,6 +37,10 @@ class HomeView: UIViewController, HomeViewProtocol, UITableViewDelegate, UITable
     func showListUser(array: [UserEntity]) {
         self.array_user = array
         self.tableView.reloadData()
+    }
+    
+    func updateUserToken(token: String) {
+        self.lblMessage.text = token
     }
     
     // MARK: - Tableview datasourse
