@@ -7,50 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BDD7B62A1EA9B175003E0E77 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7B61E1EA9B175003E0E77 /* HomeInteractor.swift */; };
-		BDD7B62C1EA9B175003E0E77 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7B6211EA9B175003E0E77 /* HomePresenter.swift */; };
-		BDD7B62D1EA9B175003E0E77 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7B6231EA9B175003E0E77 /* HomeProtocols.swift */; };
-		BDD7B62E1EA9B175003E0E77 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7B6251EA9B175003E0E77 /* HomeView.swift */; };
-		BDD7B62F1EA9B175003E0E77 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7B6271EA9B175003E0E77 /* HomeWireFrame.swift */; };
-		BDD7B6311EA9B1FC003E0E77 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDD7B6301EA9B1FC003E0E77 /* HomeView.xib */; };
-		BDD7B6341EA9E570003E0E77 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7B6321EA9E570003E0E77 /* UserTableViewCell.swift */; };
-		BDD7B6351EA9E570003E0E77 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDD7B6331EA9E570003E0E77 /* UserTableViewCell.xib */; };
-		BDD7B6391EA9F0DE003E0E77 /* database.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD7B6381EA9F0DE003E0E77 /* database.plist */; };
-		BDD7B63B1EA9F455003E0E77 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7B63A1EA9F455003E0E77 /* Extension.swift */; };
-		BDE012981EA897C000CA8398 /* LoginAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE0128A1EA897C000CA8398 /* LoginAPIDataManager.swift */; };
-		BDE012991EA897C000CA8398 /* LoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE0128C1EA897C000CA8398 /* LoginLocalDataManager.swift */; };
-		BDE0129A1EA897C000CA8398 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE0128E1EA897C000CA8398 /* LoginInteractor.swift */; };
-		BDE0129B1EA897C000CA8398 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE0128F1EA897C000CA8398 /* UserEntity.swift */; };
-		BDE0129C1EA897C000CA8398 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE012911EA897C000CA8398 /* LoginPresenter.swift */; };
-		BDE0129D1EA897C000CA8398 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE012931EA897C000CA8398 /* LoginProtocols.swift */; };
-		BDE0129E1EA897C000CA8398 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE012951EA897C000CA8398 /* LoginView.swift */; };
-		BDE0129F1EA897C000CA8398 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE012971EA897C000CA8398 /* LoginWireFrame.swift */; };
-		BDE012A11EA897F700CA8398 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE012A01EA897F700CA8398 /* LoginView.xib */; };
+		398A693F866FA476BB91F664 /* Pods_VIPERDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738B16AA6C8573BA0048617D /* Pods_VIPERDemo.framework */; };
+		5BE4EB341EAD9FE800D8C326 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB161EAD9FE800D8C326 /* Extension.swift */; };
+		5BE4EB351EAD9FE800D8C326 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB181EAD9FE800D8C326 /* UserEntity.swift */; };
+		5BE4EB361EAD9FE800D8C326 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB1C1EAD9FE800D8C326 /* HomeInteractor.swift */; };
+		5BE4EB371EAD9FE800D8C326 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB1E1EAD9FE800D8C326 /* HomePresenter.swift */; };
+		5BE4EB381EAD9FE800D8C326 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB201EAD9FE800D8C326 /* HomeProtocols.swift */; };
+		5BE4EB391EAD9FE800D8C326 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB221EAD9FE800D8C326 /* HomeView.swift */; };
+		5BE4EB3A1EAD9FE800D8C326 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4EB231EAD9FE800D8C326 /* HomeView.xib */; };
+		5BE4EB3B1EAD9FE800D8C326 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB241EAD9FE800D8C326 /* UserTableViewCell.swift */; };
+		5BE4EB3C1EAD9FE800D8C326 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4EB251EAD9FE800D8C326 /* UserTableViewCell.xib */; };
+		5BE4EB3D1EAD9FE800D8C326 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB271EAD9FE800D8C326 /* HomeWireFrame.swift */; };
+		5BE4EB3E1EAD9FE800D8C326 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB2A1EAD9FE800D8C326 /* LoginInteractor.swift */; };
+		5BE4EB3F1EAD9FE800D8C326 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB2C1EAD9FE800D8C326 /* LoginPresenter.swift */; };
+		5BE4EB401EAD9FE800D8C326 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB2E1EAD9FE800D8C326 /* LoginProtocols.swift */; };
+		5BE4EB411EAD9FE800D8C326 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB301EAD9FE800D8C326 /* LoginView.swift */; };
+		5BE4EB421EAD9FE800D8C326 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4EB311EAD9FE800D8C326 /* LoginView.xib */; };
+		5BE4EB431EAD9FE800D8C326 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB331EAD9FE800D8C326 /* LoginWireFrame.swift */; };
+		5BE4EB4A1EAD9FF700D8C326 /* LoginAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB461EAD9FF700D8C326 /* LoginAPIDataManager.swift */; };
+		5BE4EB4B1EAD9FF700D8C326 /* database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4EB481EAD9FF700D8C326 /* database.plist */; };
+		5BE4EB4C1EAD9FF700D8C326 /* LoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4EB491EAD9FF700D8C326 /* LoginLocalDataManager.swift */; };
 		BDFC5A371EA7504A0005AA82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFC5A361EA7504A0005AA82 /* AppDelegate.swift */; };
 		BDFC5A3E1EA7504A0005AA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFC5A3D1EA7504A0005AA82 /* Assets.xcassets */; };
 		BDFC5A411EA7504A0005AA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFC5A3F1EA7504A0005AA82 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BDD7B61E1EA9B175003E0E77 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		BDD7B6211EA9B175003E0E77 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		BDD7B6231EA9B175003E0E77 /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
-		BDD7B6251EA9B175003E0E77 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		BDD7B6271EA9B175003E0E77 /* HomeWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
-		BDD7B6301EA9B1FC003E0E77 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
-		BDD7B6321EA9E570003E0E77 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
-		BDD7B6331EA9E570003E0E77 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
-		BDD7B6381EA9F0DE003E0E77 /* database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = database.plist; path = ../Local/database.plist; sourceTree = "<group>"; };
-		BDD7B63A1EA9F455003E0E77 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		BDE0128A1EA897C000CA8398 /* LoginAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPIDataManager.swift; sourceTree = "<group>"; };
-		BDE0128C1EA897C000CA8398 /* LoginLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginLocalDataManager.swift; sourceTree = "<group>"; };
-		BDE0128E1EA897C000CA8398 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
-		BDE0128F1EA897C000CA8398 /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserEntity.swift; path = ../Interactor/UserEntity.swift; sourceTree = "<group>"; };
-		BDE012911EA897C000CA8398 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		BDE012931EA897C000CA8398 /* LoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
-		BDE012951EA897C000CA8398 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		BDE012971EA897C000CA8398 /* LoginWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
-		BDE012A01EA897F700CA8398 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		16B1DF9927DD3A6D81A6A8C4 /* Pods-VIPERDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERDemo/Pods-VIPERDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5BE4EB161EAD9FE800D8C326 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5BE4EB181EAD9FE800D8C326 /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		5BE4EB1C1EAD9FE800D8C326 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		5BE4EB1E1EAD9FE800D8C326 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		5BE4EB201EAD9FE800D8C326 /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		5BE4EB221EAD9FE800D8C326 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5BE4EB231EAD9FE800D8C326 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		5BE4EB241EAD9FE800D8C326 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		5BE4EB251EAD9FE800D8C326 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		5BE4EB271EAD9FE800D8C326 /* HomeWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		5BE4EB2A1EAD9FE800D8C326 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		5BE4EB2C1EAD9FE800D8C326 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5BE4EB2E1EAD9FE800D8C326 /* LoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		5BE4EB301EAD9FE800D8C326 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5BE4EB311EAD9FE800D8C326 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		5BE4EB331EAD9FE800D8C326 /* LoginWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		5BE4EB461EAD9FF700D8C326 /* LoginAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPIDataManager.swift; sourceTree = "<group>"; };
+		5BE4EB481EAD9FF700D8C326 /* database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = database.plist; sourceTree = "<group>"; };
+		5BE4EB491EAD9FF700D8C326 /* LoginLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginLocalDataManager.swift; sourceTree = "<group>"; };
+		738B16AA6C8573BA0048617D /* Pods_VIPERDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEC774C66C23FF404BFD60E /* Pods-VIPERDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERDemo/Pods-VIPERDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFC5A331EA7504A0005AA82 /* VIPERDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFC5A361EA7504A0005AA82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDFC5A3D1EA7504A0005AA82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,173 +67,179 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398A693F866FA476BB91F664 /* Pods_VIPERDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BDD7B6171EA9B175003E0E77 /* Home */ = {
+		26CC0399A3AF82E09633B4B7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BDD7B6241EA9B175003E0E77 /* View */,
-				BDD7B61D1EA9B175003E0E77 /* Interactor */,
-				BDD7B6201EA9B175003E0E77 /* Presenter */,
-				BDD7B6221EA9B175003E0E77 /* Protocols */,
-				BDD7B6261EA9B175003E0E77 /* Router */,
+				ACEC774C66C23FF404BFD60E /* Pods-VIPERDemo.debug.xcconfig */,
+				16B1DF9927DD3A6D81A6A8C4 /* Pods-VIPERDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5BE4EB151EAD9FE800D8C326 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5BE4EB161EAD9FE800D8C326 /* Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5BE4EB171EAD9FE800D8C326 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5BE4EB181EAD9FE800D8C326 /* UserEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5BE4EB191EAD9FE800D8C326 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5BE4EB281EAD9FE800D8C326 /* Login */,
+				5BE4EB1A1EAD9FE800D8C326 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5BE4EB1A1EAD9FE800D8C326 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5BE4EB1B1EAD9FE800D8C326 /* Interactor */,
+				5BE4EB1D1EAD9FE800D8C326 /* Presenter */,
+				5BE4EB1F1EAD9FE800D8C326 /* Protocols */,
+				5BE4EB211EAD9FE800D8C326 /* View */,
+				5BE4EB261EAD9FE800D8C326 /* WireFrame */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		BDD7B61D1EA9B175003E0E77 /* Interactor */ = {
+		5BE4EB1B1EAD9FE800D8C326 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				BDD7B61E1EA9B175003E0E77 /* HomeInteractor.swift */,
+				5BE4EB1C1EAD9FE800D8C326 /* HomeInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		BDD7B6201EA9B175003E0E77 /* Presenter */ = {
+		5BE4EB1D1EAD9FE800D8C326 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				BDD7B6211EA9B175003E0E77 /* HomePresenter.swift */,
+				5BE4EB1E1EAD9FE800D8C326 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		BDD7B6221EA9B175003E0E77 /* Protocols */ = {
+		5BE4EB1F1EAD9FE800D8C326 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				BDD7B6231EA9B175003E0E77 /* HomeProtocols.swift */,
+				5BE4EB201EAD9FE800D8C326 /* HomeProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		BDD7B6241EA9B175003E0E77 /* View */ = {
+		5BE4EB211EAD9FE800D8C326 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BDD7B6251EA9B175003E0E77 /* HomeView.swift */,
-				BDD7B6301EA9B1FC003E0E77 /* HomeView.xib */,
-				BDD7B6321EA9E570003E0E77 /* UserTableViewCell.swift */,
-				BDD7B6331EA9E570003E0E77 /* UserTableViewCell.xib */,
+				5BE4EB221EAD9FE800D8C326 /* HomeView.swift */,
+				5BE4EB231EAD9FE800D8C326 /* HomeView.xib */,
+				5BE4EB241EAD9FE800D8C326 /* UserTableViewCell.swift */,
+				5BE4EB251EAD9FE800D8C326 /* UserTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		BDD7B6261EA9B175003E0E77 /* Router */ = {
+		5BE4EB261EAD9FE800D8C326 /* WireFrame */ = {
 			isa = PBXGroup;
 			children = (
-				BDD7B6271EA9B175003E0E77 /* HomeWireFrame.swift */,
+				5BE4EB271EAD9FE800D8C326 /* HomeWireFrame.swift */,
 			);
-			name = Router;
 			path = WireFrame;
 			sourceTree = "<group>";
 		};
-		BDD7B63C1EA9F469003E0E77 /* Common */ = {
+		5BE4EB281EAD9FE800D8C326 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				BDD7B63A1EA9F455003E0E77 /* Extension.swift */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		BDD7B63D1EA9F7CB003E0E77 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				BDE0128F1EA897C000CA8398 /* UserEntity.swift */,
-			);
-			name = Entity;
-			path = Login/DataManager;
-			sourceTree = "<group>";
-		};
-		BDD7B63E1EA9FF54003E0E77 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				BDE012871EA897C000CA8398 /* Login */,
-				BDD7B6171EA9B175003E0E77 /* Home */,
-			);
-			name = Module;
-			sourceTree = "<group>";
-		};
-		BDE012871EA897C000CA8398 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				BDE012941EA897C000CA8398 /* View */,
-				BDE0128D1EA897C000CA8398 /* Interactor */,
-				BDE012901EA897C000CA8398 /* Presenter */,
-				BDE012921EA897C000CA8398 /* Protocols */,
-				BDE012961EA897C000CA8398 /* Router */,
+				5BE4EB291EAD9FE800D8C326 /* Interactor */,
+				5BE4EB2B1EAD9FE800D8C326 /* Presenter */,
+				5BE4EB2D1EAD9FE800D8C326 /* Protocols */,
+				5BE4EB2F1EAD9FE800D8C326 /* View */,
+				5BE4EB321EAD9FE800D8C326 /* WireFrame */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		BDE012881EA897C000CA8398 /* DataManager */ = {
+		5BE4EB291EAD9FE800D8C326 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				BDE012891EA897C000CA8398 /* API */,
-				BDE0128B1EA897C000CA8398 /* Local */,
-			);
-			name = DataManager;
-			path = Login/DataManager;
-			sourceTree = "<group>";
-		};
-		BDE012891EA897C000CA8398 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				BDE0128A1EA897C000CA8398 /* LoginAPIDataManager.swift */,
-				BDD7B6381EA9F0DE003E0E77 /* database.plist */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		BDE0128B1EA897C000CA8398 /* Local */ = {
-			isa = PBXGroup;
-			children = (
-				BDE0128C1EA897C000CA8398 /* LoginLocalDataManager.swift */,
-			);
-			path = Local;
-			sourceTree = "<group>";
-		};
-		BDE0128D1EA897C000CA8398 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				BDE0128E1EA897C000CA8398 /* LoginInteractor.swift */,
+				5BE4EB2A1EAD9FE800D8C326 /* LoginInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		BDE012901EA897C000CA8398 /* Presenter */ = {
+		5BE4EB2B1EAD9FE800D8C326 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				BDE012911EA897C000CA8398 /* LoginPresenter.swift */,
+				5BE4EB2C1EAD9FE800D8C326 /* LoginPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		BDE012921EA897C000CA8398 /* Protocols */ = {
+		5BE4EB2D1EAD9FE800D8C326 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				BDE012931EA897C000CA8398 /* LoginProtocols.swift */,
+				5BE4EB2E1EAD9FE800D8C326 /* LoginProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		BDE012941EA897C000CA8398 /* View */ = {
+		5BE4EB2F1EAD9FE800D8C326 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BDE012951EA897C000CA8398 /* LoginView.swift */,
-				BDE012A01EA897F700CA8398 /* LoginView.xib */,
+				5BE4EB301EAD9FE800D8C326 /* LoginView.swift */,
+				5BE4EB311EAD9FE800D8C326 /* LoginView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		BDE012961EA897C000CA8398 /* Router */ = {
+		5BE4EB321EAD9FE800D8C326 /* WireFrame */ = {
 			isa = PBXGroup;
 			children = (
-				BDE012971EA897C000CA8398 /* LoginWireFrame.swift */,
+				5BE4EB331EAD9FE800D8C326 /* LoginWireFrame.swift */,
 			);
-			name = Router;
 			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		5BE4EB441EAD9FF700D8C326 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				5BE4EB451EAD9FF700D8C326 /* API */,
+				5BE4EB471EAD9FF700D8C326 /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		5BE4EB451EAD9FF700D8C326 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5BE4EB461EAD9FF700D8C326 /* LoginAPIDataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5BE4EB471EAD9FF700D8C326 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				5BE4EB481EAD9FF700D8C326 /* database.plist */,
+				5BE4EB491EAD9FF700D8C326 /* LoginLocalDataManager.swift */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 		BDFC5A2A1EA7504A0005AA82 = {
@@ -237,6 +247,8 @@
 			children = (
 				BDFC5A351EA7504A0005AA82 /* VIPERDemo */,
 				BDFC5A341EA7504A0005AA82 /* Products */,
+				26CC0399A3AF82E09633B4B7 /* Pods */,
+				D1F2D8E63F8F07BF0C109EB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,15 +264,23 @@
 			isa = PBXGroup;
 			children = (
 				BDFC5A361EA7504A0005AA82 /* AppDelegate.swift */,
-				BDD7B63C1EA9F469003E0E77 /* Common */,
-				BDE012881EA897C000CA8398 /* DataManager */,
-				BDD7B63D1EA9F7CB003E0E77 /* Entity */,
-				BDD7B63E1EA9FF54003E0E77 /* Module */,
+				5BE4EB151EAD9FE800D8C326 /* Common */,
+				5BE4EB441EAD9FF700D8C326 /* DataManager */,
+				5BE4EB171EAD9FE800D8C326 /* Entity */,
+				5BE4EB191EAD9FE800D8C326 /* Modules */,
 				BDFC5A3D1EA7504A0005AA82 /* Assets.xcassets */,
 				BDFC5A3F1EA7504A0005AA82 /* LaunchScreen.storyboard */,
 				BDFC5A421EA7504A0005AA82 /* Info.plist */,
 			);
 			path = VIPERDemo;
+			sourceTree = "<group>";
+		};
+		D1F2D8E63F8F07BF0C109EB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				738B16AA6C8573BA0048617D /* Pods_VIPERDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +290,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDFC5A451EA7504A0005AA82 /* Build configuration list for PBXNativeTarget "VIPERDemo" */;
 			buildPhases = (
+				884DD5CC554F5C0DFCF5739B /* [CP] Check Pods Manifest.lock */,
 				BDFC5A2F1EA7504A0005AA82 /* Sources */,
 				BDFC5A301EA7504A0005AA82 /* Frameworks */,
 				BDFC5A311EA7504A0005AA82 /* Resources */,
+				7A4032C63BF53FBECA411D32 /* [CP] Embed Pods Frameworks */,
+				E13CF09DB42FB93EFFCC538B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,38 +344,86 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE4EB3C1EAD9FE800D8C326 /* UserTableViewCell.xib in Resources */,
+				5BE4EB4B1EAD9FF700D8C326 /* database.plist in Resources */,
 				BDFC5A411EA7504A0005AA82 /* LaunchScreen.storyboard in Resources */,
-				BDD7B6391EA9F0DE003E0E77 /* database.plist in Resources */,
-				BDD7B6311EA9B1FC003E0E77 /* HomeView.xib in Resources */,
 				BDFC5A3E1EA7504A0005AA82 /* Assets.xcassets in Resources */,
-				BDE012A11EA897F700CA8398 /* LoginView.xib in Resources */,
-				BDD7B6351EA9E570003E0E77 /* UserTableViewCell.xib in Resources */,
+				5BE4EB421EAD9FE800D8C326 /* LoginView.xib in Resources */,
+				5BE4EB3A1EAD9FE800D8C326 /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A4032C63BF53FBECA411D32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPERDemo/Pods-VIPERDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		884DD5CC554F5C0DFCF5739B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E13CF09DB42FB93EFFCC538B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPERDemo/Pods-VIPERDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDFC5A2F1EA7504A0005AA82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE0129C1EA897C000CA8398 /* LoginPresenter.swift in Sources */,
-				BDD7B62D1EA9B175003E0E77 /* HomeProtocols.swift in Sources */,
-				BDE0129D1EA897C000CA8398 /* LoginProtocols.swift in Sources */,
-				BDD7B62F1EA9B175003E0E77 /* HomeWireFrame.swift in Sources */,
-				BDE0129A1EA897C000CA8398 /* LoginInteractor.swift in Sources */,
-				BDD7B62A1EA9B175003E0E77 /* HomeInteractor.swift in Sources */,
-				BDE0129B1EA897C000CA8398 /* UserEntity.swift in Sources */,
-				BDE0129F1EA897C000CA8398 /* LoginWireFrame.swift in Sources */,
-				BDD7B62C1EA9B175003E0E77 /* HomePresenter.swift in Sources */,
-				BDD7B6341EA9E570003E0E77 /* UserTableViewCell.swift in Sources */,
-				BDE012981EA897C000CA8398 /* LoginAPIDataManager.swift in Sources */,
 				BDFC5A371EA7504A0005AA82 /* AppDelegate.swift in Sources */,
-				BDD7B63B1EA9F455003E0E77 /* Extension.swift in Sources */,
-				BDE0129E1EA897C000CA8398 /* LoginView.swift in Sources */,
-				BDE012991EA897C000CA8398 /* LoginLocalDataManager.swift in Sources */,
-				BDD7B62E1EA9B175003E0E77 /* HomeView.swift in Sources */,
+				5BE4EB391EAD9FE800D8C326 /* HomeView.swift in Sources */,
+				5BE4EB351EAD9FE800D8C326 /* UserEntity.swift in Sources */,
+				5BE4EB4A1EAD9FF700D8C326 /* LoginAPIDataManager.swift in Sources */,
+				5BE4EB341EAD9FE800D8C326 /* Extension.swift in Sources */,
+				5BE4EB3F1EAD9FE800D8C326 /* LoginPresenter.swift in Sources */,
+				5BE4EB3B1EAD9FE800D8C326 /* UserTableViewCell.swift in Sources */,
+				5BE4EB371EAD9FE800D8C326 /* HomePresenter.swift in Sources */,
+				5BE4EB381EAD9FE800D8C326 /* HomeProtocols.swift in Sources */,
+				5BE4EB3D1EAD9FE800D8C326 /* HomeWireFrame.swift in Sources */,
+				5BE4EB401EAD9FE800D8C326 /* LoginProtocols.swift in Sources */,
+				5BE4EB411EAD9FE800D8C326 /* LoginView.swift in Sources */,
+				5BE4EB3E1EAD9FE800D8C326 /* LoginInteractor.swift in Sources */,
+				5BE4EB431EAD9FE800D8C326 /* LoginWireFrame.swift in Sources */,
+				5BE4EB361EAD9FE800D8C326 /* HomeInteractor.swift in Sources */,
+				5BE4EB4C1EAD9FF700D8C326 /* LoginLocalDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +526,7 @@
 		};
 		BDFC5A461EA7504A0005AA82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACEC774C66C23FF404BFD60E /* Pods-VIPERDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VIPERDemo/Info.plist;
@@ -466,6 +538,7 @@
 		};
 		BDFC5A471EA7504A0005AA82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B1DF9927DD3A6D81A6A8C4 /* Pods-VIPERDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VIPERDemo/Info.plist;
